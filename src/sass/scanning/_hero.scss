@@ -1,0 +1,153 @@
+.scan-hero {
+  padding-top: 40px;
+  @media screen and (min-width: 1440px) {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .scan-hero__title {
+    margin-left: 117px;
+  }
+}
+
+.scan-hero__text-wrap {
+  position: relative;
+  @media screen and (min-width: 1440px) {
+    margin-left: 117px;
+    display: flex;
+    height: 378px;
+  }
+}
+
+.scan-hero__text {
+  margin-top: 16px;
+  @media screen and (min-width: 768px) {
+    width: 504px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 515px;
+    min-height: 138px;
+    margin-top: 24px;
+    margin-right: 72px;
+  }
+}
+
+.scan-hero__image {
+  margin-top: 20px;
+  max-width: 440px;
+  height: 312px;
+  background-image: url('../images/scanning/scanning-photo-mob-1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 80px;
+    right: -26px;
+    width: 241px;
+    height: 172px;
+    background-image: url('../images/scanning/scanning-photo-tab-1x.jpg');
+  }
+  @media screen and (min-width: 1440px) {
+    top: 116px;
+    right: 237px;
+    width: 435px;
+    height: 286px;
+    background-image: url('../images/scanning/scanning-photo-desk-1x.jpg');
+  }
+}
+
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 320px) and (min-resolution: 192dpi),
+  screen and (min-width: 320px) and (min-resolution: 2dppx) {
+  .scan-hero__image {
+    background-image: url('../images/scanning/scanning-photo-mob-2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .scan-hero__image {
+    background-image: url('../images/scanning/scanning-photo-tab-2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (min-resolution: 192dpi),
+  screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .scan-hero__image {
+    background-image: url('../images/scanning/scanning-photo-desk-2x.jpg');
+  }
+}
+
+.scan-hero__figure {
+  position: absolute;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+}
+
+.scan-hero__figure-one {
+  width: 74px;
+  height: 74px;
+  border-radius: 0px 0px 35px 0px;
+  left: -29px;
+  top: 150px;
+  @media screen and (min-width: 768px) {
+    height: 71px;
+    left: 0px;
+    top: 57px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 82px;
+    height: 78px;
+    border-radius: 0px 0px 72px 0px;
+    left: -117px;
+    top: -56px;
+  }
+}
+
+.scan-hero__figure-two {
+  width: 74px;
+  height: 74px;
+  border-radius: 72px;
+  right: -74px;
+  top: 400px;
+  @media screen and (min-width: 768px) {
+    border-radius: 0px 35px 0px 0px;
+    transform: rotate(180deg);
+    right: 0;
+    top: -68px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 144px;
+    height: 137px;
+    border-radius: 0px 0px 72px 0px;
+    transform: rotate(90deg);
+    right: 0px;
+    top: -80px;
+  }
+}
+
+.scan-hero__figure-three {
+  width: 74px;
+  height: 74px;
+  border-radius: 25px 0px;
+  left: -37px;
+  top: 466px;
+  @media screen and (min-width: 768px) {
+    width: 71px;
+    left: 633px;
+    top: 284px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 137px;
+    height: 144px;
+    border-radius: 72px 0px;
+    left: 1123px;
+    top: 265px;
+  }
+}

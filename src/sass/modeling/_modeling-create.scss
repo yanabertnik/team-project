@@ -1,0 +1,62 @@
+.modeling-create {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+  @include desktop {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+.modeling-create__title {
+  text-align: start;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  width: 250px;
+  height: 60px;
+  @include tablet {
+    width: 600px;
+    height: 60px;
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+  @include desktop {
+    width: 842px;
+    height: 90px;
+    margin-left: 117px;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+}
+.modeling-create__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+  @include tablet {
+    margin-bottom: 60px;
+  }
+  @include desktop {
+    margin-bottom: 80px;
+  }
+}
+.modeling-create__item {
+  flex-basis: calc((100% - 30px) / 2);
+  @media screen and (min-width: 768px) {
+    // height: 134px;
+    flex-basis: calc((100% - 30px * 3) / 4);
+  }
+}
+.modeling-create__button {
+  margin: auto;
+  cursor: pointer;
+}

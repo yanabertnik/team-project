@@ -1,0 +1,111 @@
+.wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+.section-hero {
+  // position: relative;
+  padding: 40px 0 40px;
+
+  @include tablet {
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    padding: 88px 0 120px;
+    // height: calc(100vh - 90px);
+  }
+}
+.section-hero__title {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+
+  color: var(--main-text-color);
+  @include tablet {
+    margin-bottom: 60px;
+    max-width: 334px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+  @include desktop {
+    display: flex;
+
+    flex-direction: column;
+    max-width: 630px;
+    font-size: 48px;
+    line-height: calc(56 / 48);
+  }
+}
+
+.section-hero__list {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 32px;
+  @include tablet {
+    // max-width: 400px;
+    margin-bottom: 60px;
+    gap: 29px;
+  }
+  @include desktop {
+    gap: 32px;
+  }
+}
+
+.section-hero__item {
+  width: 84px;
+  height: 84px;
+
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
+  background: #ffffff;
+  overflow: hidden;
+  &:nth-child(1) {
+    border-radius: 0px 35px 0px 0px;
+  }
+  &:nth-child(2) {
+    border-radius: 100px;
+  }
+  &:nth-child(3) {
+    border-radius: 0px 25px;
+  }
+  @include tablet {
+    width: 114px;
+    height: 114px;
+  }
+  @include desktop {
+    width: 203px;
+    height: 203px;
+    &:nth-child(1) {
+      border-radius: 0px 72px 0px 0px;
+    }
+
+    &:nth-child(3) {
+      border-radius: 0px 72px;
+    }
+  }
+}
+
+.section-hero__text {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+
+  color: var(--main-text-color);
+
+  text-align: center;
+  @include tablet {
+    font-size: 18px;
+    line-height: calc(21 / 18);
+  }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
+}

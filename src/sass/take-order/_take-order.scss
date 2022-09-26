@@ -1,0 +1,220 @@
+.hero-order__container{
+    @include desktop {
+        padding: 0 32px 0 149px;
+    }
+}
+.hero-order__title { 
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #487996;
+    @include tablet { 
+        text-align: left;
+        font-size: 36px;
+        line-height: 45px;
+    }
+    @include desktop {
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 24px;
+    }
+}
+ .hero-order__box{
+    @include tablet {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+}
+.hero-order__image {
+  min-width: 280px;
+  min-height: 171px;
+  margin-bottom: 16px;
+    background-image: url('../images/take-order/order-mob-1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @include tablet {
+        min-width: 336px;
+        min-height: 158px;
+        margin-bottom: 0;
+        background-image: url('../images/take-order/order-tab-1x.jpg');
+      }
+      @include desktop {
+        min-width: 555px;
+        min-height: 400px;
+        background-image: url('../images/take-order/order-desk-1x.jpg');
+      }
+}
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 320px) and (min-resolution: 192dpi),
+  screen and (min-width: 320px) and (min-resolution: 2dppx) {
+  .hero-order__image {
+    background-image: url('../images/take-order/order-mob-2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-order__image {
+    background-image: url('../images/take-order/order-tab-2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (min-resolution: 192dpi),
+  screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero-order__image {
+    background-image: url('../images/take-order/order-desk-2x.jpg');
+  }
+}
+
+.hero-order__gallery-box {
+    margin-top: 16px;
+}
+
+.hero-order__text {
+  font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+color: #2B2B2B;
+  margin-bottom: 16px;
+@include tablet {
+    margin-bottom: 0;
+}
+@include desktop {
+    margin-bottom: 24px;
+}
+}
+.hero-order__gallery-list {
+    @media screen and (max-width: 1439px) {
+        display: none;
+      }
+    @include desktop {
+      display: flex;
+      justify-content: center;
+    gap: 32px;
+    margin-top: 60px;
+    }
+}
+.hero-order__gallery-item {
+    width: 203px;
+    height: 203px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+    background: #ffffff;
+  overflow: hidden;
+}
+.border-radius1 {
+    border-radius: 0px 72px 72px 0px;
+}
+.border-radius2 {
+    border-radius: 72px 0px;
+}
+.border-radius3 {
+    border-radius: 0px 0px 72px 0px;
+}
+
+
+
+.take-order-box {
+    @include desktop {
+        display: flex;
+        align-items: baseline;
+        padding-left: 149px;
+        padding-right: 149px;
+        justify-content: space-between;
+    }
+}
+.contacts-order__info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 60px 0;
+    @include tablet {
+        flex-direction: row;
+        gap: 20px;
+    }
+    @include desktop {
+        flex-direction: column;
+        padding: 0;
+        gap: 30px;
+    }
+}
+.contacts-order__tel-box,
+.contacts-order__mail-box,
+.contacts-order__time-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    @include desktop {
+        gap: 18px;
+    }
+}
+
+.contacts-order__time-box {
+  @include tablet {
+      text-align: end;
+      margin-left: auto;
+  }
+  @include desktop {
+      text-align: start;
+      margin: 0;
+  }
+}
+br {
+  @include desktop {
+      display: none;
+  }
+}
+.contacts-order__title {
+  font-size: 18px;
+  margin-bottom: 8px;
+  @include desktop {
+    font-size: 36px;
+    text-align: right;
+}
+}
+.contacts-order__list {
+  display: flex;
+   flex-direction: column;
+   gap: 8px;
+    @include desktop {
+      gap: 18px;
+        text-align: right;
+    }
+}
+
+
+.contacts-order__text {
+  @include desktop{
+  font-weight: 500;
+  font-size: 19px;}
+}
+.contacts-order__time {
+    @include tablet {
+        text-align: right;
+    }
+}
+.contacts-order__gallery{
+    @media screen and (max-width: 1439px) {
+        display: none;
+    }
+    @include desktop {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+    margin-right: -100px;
+    margin-top: -25px;
+}}
+
+
+.order-wrap-text {
+    @include desktop{
+    display: flex;
+    flex-wrap: wrap;}
+}

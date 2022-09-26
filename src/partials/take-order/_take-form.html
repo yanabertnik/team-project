@@ -1,0 +1,84 @@
+<div class="contactform">
+  <form class="form">
+    <h2 class="form__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+    <ul class="form__list">
+      <li class="form__item">
+        <label for="name" class="form__field">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form__input"
+            placeholder="Олексій"
+          />
+          <span class="form__label">Ім’я</span>
+        </label>
+      </li>
+      <li class="form__item">
+        <label for="email" class="form__field">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="form__input"
+            placeholder="mail@gmail.com"
+          />
+          <span class="form__label">Email</span>
+        </label>
+      </li>
+      <li class="form__item">
+        <select class="form__select" name="plastik" id="plastik">
+          <option disabled selected>Види пластика</option>
+          <option value="ABS пластик">ABS пластик</option>
+          <option value="Нейлон">Нейлон</option>
+          <option value="Полiамид">Полiамид</option>
+          <option value="Труднощi у виборi- ми допоможемо">
+            Труднощi у виборi- ми допоможемо
+          </option>
+        </select>
+      </li>
+      <li class="form__item">
+        <select class="form__select" name="quality" id="quality">
+          <option disabled selected>Якість друку</option>
+          <option value="300 мiкрон">300 мiкрон</option>
+          <option value="200 мiкрон">200 мiкрон</option>
+          <option value="100 мiкрон">100 мiкрон</option>
+          <option value="Труднощi у виборi- ми допоможемо">
+            Труднощi у виборi- ми допоможемо
+          </option>
+        </select>
+      </li>
+      <li class="form__item">
+        <select class="form__select" name="color" id="color">
+          <option disabled selected>Колір</option>
+          <option value="Жовтий">Жовтий</option>
+          <option value="Блакитний">Блакитний</option>
+          <option value="Жовтоблакитний">Жовтоблакитний</option>
+          <option value="Труднощi у виборi- ми допоможемо">
+            Труднощi у виборi- ми допоможемо
+          </option>
+        </select>
+      </li>
+      <li class="form__item">
+        <label for="message" class="form__textarea__label">Повідомлення</label>
+        <div class="form__textarea__field">
+          <textarea
+            class="form__textarea"
+            name="message"
+            id="message"
+            placeholder="Залишіть своє повідомлення"
+          ></textarea>
+          <input type="file" name="file" id="file" class="uploadfile" />
+          <label class="uploadfile__label" for="file">
+            <svg class="form__textarea__icon" width="22" height="20">
+              <use href="./images/icons.svg#icon-attach"></use>
+            </svg>
+          </label>
+        </div>
+        <p class="form__textarea__description">
+          *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+        </p>
+      </li>
+    </ul>
+  </form>
+</div>

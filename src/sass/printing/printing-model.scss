@@ -1,0 +1,190 @@
+.model-exsamples {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    @include desktop {
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+}
+
+.model-exsamples__title {
+    padding-bottom: 20px;
+    @include desktop {
+        padding-left: 117px;
+        padding-bottom: 24px;
+    }
+}
+
+.card-list {
+    display: flex;
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        gap: 20px 16px;
+    }
+
+    @include tablet {
+        gap: 32px;
+    }
+}
+
+.card-list__item {
+    justify-content: center;
+    width: calc((100% - 20px) / 2);
+    height: 158px;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+    border-radius: 50px 0px;
+    
+    @include tablet {
+        width: calc((100% - 96px) / 4);
+        height: 182px;
+    }
+
+    @include desktop {
+        width: calc((100% - 96px) / 4);
+        height: 382px;        
+    }
+}
+
+.card-list__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card-list__first {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 89.83px;
+    height: 74.37px;
+    margin-bottom: 17.06px;
+    @include tablet {
+        width: 105.04px;
+        height: 85.5px;
+    }
+
+    @include desktop {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+.card-list__second {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100.88px;
+    height: 63.62px;
+    margin-bottom: 16.67px;
+    @include tablet {
+        width: 117.95px;
+        height: 73.29px;
+    }
+
+    @include desktop {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+.card-list__third {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 43.16px;
+    height: 70.52px;
+    margin-bottom: 16.67px;
+    @include tablet {
+        width: 50.46px;
+        height: 81.08px;
+    }
+
+    @include desktop {
+        width: 149.42px;
+        height: 240px;
+    }
+}
+
+.card-list__fourth {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 83.72px;
+    height: 85.36px;
+    margin-bottom: 9.25px;
+    @include tablet {
+        width: 97.89px;
+        height: 98.14px;
+    }
+
+    @include desktop {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+.card-list__title {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: calc(14 / 11);
+    text-align: center;
+    color: var(--second-title-color);
+    @include desktop {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: calc(23 / 18); 
+    }
+}
+
+.model-exsamples__figure {
+    position: absolute;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+}
+  
+.model-exsamples__figure-one {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 73.65px;
+        height: 73.65px;
+        left: -29px;
+        top: 210px;
+        border-radius: 0px 0px 35px 0px;
+        z-index: -1;
+    }
+    
+    @media screen and (min-width: 1440px) {
+        width: 82px;
+        height: 78px;
+        border-radius: 0px 0px 72px 0px;
+        left: 35px;
+        top: 85px;
+    }
+}
+  
+.model-exsamples__figure-two {
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+        width: 71.41px;
+        height: 63.79px;
+        border-radius: 0px 35px 0px 0px;
+        transform: rotate(180deg);
+        right: 32px;
+        top: 12px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 83px;
+        height: 137px;
+        border-radius: 0px 0px 72px 0px;
+        transform: rotate(90deg);
+        right: 45px;
+        top: 30px;
+    }
+}

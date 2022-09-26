@@ -1,0 +1,261 @@
+.more-photo {
+  padding-bottom: 121px;
+  @include tablet {
+    padding-bottom: 80px;
+  }
+  @include desktop {
+    padding-bottom: 156px;
+  }
+}
+
+.more-photo__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--second-title-color);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  @include tablet {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 32px;
+  }
+  @include desktop {
+    margin-left: 117px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.25;
+    margin-bottom: 60px;
+  }
+}
+
+.more-photo__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+.more-photo__item {
+  &:nth-child(n + 4) {
+    display: none;
+  }
+  @include tablet {
+    &:nth-child(n + 4) {
+      display: block;
+    }
+  }
+}
+
+.icon-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    margin-top: 12px;
+    display: flex;
+  }
+}
+// Модалка-тест
+
+/* Style the Image Used to Trigger the Modal */
+.more-photo__img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.more-photo__img {
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.button__left {
+  animation-name: zoom;
+  animation-duration: 0.3s;
+  width: 11px;
+  height: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: block;
+  @include tablet {
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin-right: 32px;
+  }
+  @include desktop {
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin-right: 32px;
+  }
+}
+.button__right {
+  animation-name: zoom;
+  animation-duration: 0.3s;
+
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  width: 11px;
+  height: 10px;
+  background-color: transparent;
+  display: block;
+  @include tablet {
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin-left: 32px;
+  }
+  @include desktop {
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin-left: 32px;
+  }
+}
+
+.button-svg {
+  @include mobile {
+    width: 11px;
+    height: 10px;
+  }
+  @include tablet {
+    width: 26px;
+    height: 26px;
+  }
+  @include desktop {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* The Modal (background) */
+.more-photo__modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background: rgba(43, 43, 43, 0.8);
+  backdrop-filter: blur(4px);
+  padding-top: 200px;
+  @include tablet {
+    background: rgba(43, 43, 43, 0.8);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    padding-top: 250px;
+  }
+  @include desktop {
+    background: rgba(43, 43, 43, 0.8);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    padding-top: 250px;
+  }
+}
+
+.more-photo__modal--flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  display: block;
+  width: 80%;
+  max-width: 236px;
+  max-height: 157px;
+  @include tablet {
+    display: block;
+    width: 80%;
+    max-width: 554px;
+    max-height: 369px;
+  }
+  @include desktop {
+    display: block;
+    width: 80%;
+    max-width: 906px;
+    max-height: 605px;
+  }
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  display: block;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.button__close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: #f1f1f1;
+  font-size: 27px;
+  font-weight: bold;
+  transition: 0.3s;
+  display: block;
+  @include tablet {
+    display: block;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  @include desktop {
+    display: block;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.button__close {
+  &:hover,
+  &:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}

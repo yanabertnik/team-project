@@ -1,0 +1,32 @@
+@import './utils/reset';
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/common';
+
+@import './components/header';
+@import './components/footer';
+
+@import './main-pages/hero';
+@import './main-pages/gallary';
+@import './main-pages/decor';
+
+@import './slider/more-foto';
+
+@import './modeling/modeling-hero';
+@import './modeling/modeling-methods';
+@import './modeling/modeling-create';
+
+@import './scanning/hero';
+@import './scanning/process';
+@import './scanning/button';
+
+@import './take-order/take-order';
+@import './take-order/take-form';
+
+@import './contacts/contacts-hero';
+@import './contacts/order-form';
+
+@import './printing/printing-model.scss';
+@import './printing/printing-process.scss';
+
+@import './components/menu';

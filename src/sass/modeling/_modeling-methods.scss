@@ -1,0 +1,138 @@
+.modeling-create {
+  padding-top: 40px;
+  padding-bottom: 0;
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+}
+.modeling-methods__title {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.3;
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    height: 46px;
+  }
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  @include desktop {
+    margin-left: 117px;
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+}
+.modeling-methods__item {
+  padding-left: 17px;
+  position: relative;
+}
+.modeling-methods__item::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background: var(--second-title-color);
+  border-radius: 3px 0px;
+  @media screen and (min-width: 768px) {
+    width: 8px;
+    height: 8px;
+  }
+}
+.modeling-methods__list {
+  position: relative;
+  padding-bottom: 40px;
+  @include desktop {
+    margin-left: 117px;
+  }
+}
+.modeling-methods__figure {
+  position: absolute;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+}
+.modeling-methods__figure-three {
+  width: 74px;
+  height: 74px;
+  border-radius: 25px 0px;
+  left: -37px;
+  top: 466px;
+  @media screen and (min-width: 768px) {
+    width: 71px;
+    left: 610px;
+    top: 55px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 137px;
+    height: 144px;
+    border-radius: 72px 0px;
+    left: 1060px;
+    top: 130px;
+  }
+}
+.modeling-methods__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.modeling-methods__image {
+  max-width: 555px;
+  min-height: 164px;
+  background-image: url('../images/modeling/modeling-motor-mob-1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 320px) and (min-resolution: 192dpi),
+  screen and (min-width: 320px) and (min-resolution: 2dppx) {
+  .modeling-methods__image {
+    background-image: url('../images/modeling/modeling-motor-mob-2x.jpg');
+  }
+}
+@media screen and (min-width: 768px) {
+  .modeling-methods__image {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modeling-methods__container {
+    background-image: url('../images/modeling/modeling-motor-tab-1x.jpg');
+    background-repeat: no-repeat;
+    background-position: 460px 50px;
+    background-size: 246px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .modeling-methods__container {
+    background-image: url('../images/modeling/modeling-motor-tab-2x.jpg');
+  }
+}
+@media screen and (min-width: 1440px) {
+  .modeling-methods__item {
+    display: flex;
+  }
+  .modeling-methods__container {
+    background-image: url('../images/modeling/modeling-motor-desk-1x.jpg');
+    background-repeat: no-repeat;
+    background-position: 700px 0px;
+    background-size: 542px;
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (min-resolution: 192dpi),
+  screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .modeling-methods__container {
+    background-image: url('../images/modeling/modeling-motor-desk-2x.jpg');
+  }
+}
