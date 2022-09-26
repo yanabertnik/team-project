@@ -1,0 +1,2 @@
+!function(){var e={openMenuBtn:document.querySelector(".mobile__open"),closeMenuBtn:document.querySelector(".menu-close"),menu:document.querySelector(".mob-menu"),body:document.querySelector("body")};function n(){e.menu.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n)}();
+//# sourceMappingURL=contacts.f064a134.js.map
